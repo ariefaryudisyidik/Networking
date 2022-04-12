@@ -1,8 +1,11 @@
 package com.binar.ariefaryudisyidik.networkingsample.data.model
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class GetAllCarResponseItem(
     @SerializedName("category")
     val category: String,
@@ -24,4 +27,4 @@ data class GetAllCarResponseItem(
     val status: Boolean,
     @SerializedName("updatedAt")
     val updatedAt: String
-)
+) : Parcelable
