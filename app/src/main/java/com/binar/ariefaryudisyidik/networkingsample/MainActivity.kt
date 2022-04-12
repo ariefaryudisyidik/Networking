@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
                 response: Response<List<GetAllCarResponseItem>>
             ) {
             }
-
             override fun onFailure(call: Call<List<GetAllCarResponseItem>>, t: Throwable) {
             }
         })
